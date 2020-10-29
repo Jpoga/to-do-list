@@ -46,6 +46,19 @@ button:focus {
   letter-spacing: 1px;
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter > button {
+  background-color: rgb(228, 228, 228);
+  max-width: 30%;
+  font-size: 70%;
+  color: black;
+  margin-bottom: 8px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -129,6 +142,7 @@ header {
 
 .tasks > li:hover {
   background-color: rgb(228, 228, 228);
+  border-radius: 4px;
 }
 
 .tasks > li > input {
