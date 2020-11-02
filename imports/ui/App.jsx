@@ -58,7 +58,7 @@ export const App = () => {
       <header>
         <div className="app-bar">
           <div className="app-header">
-            <h1>📝️ LISTA DE TAREFAS</h1>
+            <h1>✔ LISTA DE TAREFAS</h1>
             {pendingTasksTitle}
           </div>
         </div>
@@ -67,8 +67,12 @@ export const App = () => {
       <div className="main">
         { user ? (
           <Fragment>
-            <div className="user" onClick={logout}>
-              {user.username} 🚪
+            <div className="user">
+              {user.username}         
+            </div>
+            
+            <div className="logout" onClick={logout}>
+              <button>Sair</button>
             </div>
 
             <TaskForm user={user} />

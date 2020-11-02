@@ -133,6 +133,23 @@ header {
   font-weight: bold;
 }
 
+.logout {
+  display: flex;
+  align-self: flex-end;
+  margin: 8px 16px 0;
+  cursor: pointer;
+  color: white;
+}
+
+.logout > button {
+  background-color: #ff3046;
+}
+
+.logout > button:hover {
+  background-color: #d11c2f;
+}
+
+
 .tasks {
   list-style-type: none;
   padding-inline-start: 0;
@@ -171,9 +188,7 @@ header {
 }
 
 .tasks > li > button:hover {
-  background-color: #d11c2f;
-  width: 26px;
-  height: 26px;
+  background-color: #d11c2f
 }
 
 .login-form {
